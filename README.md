@@ -1,25 +1,18 @@
-Preparation:
+# Minishell Memory Leak Tester
 
-Ensure that Valgrind is installed on your system.
+This script is designed to automatically test your `minishell` executable for memory leaks using **Valgrind**.
 
-Place your minishell executable in the same directory as the script (or update the script’s MINISHELL variable to the correct path).
+## 🛠 Requirements
 
-Create a commands.txt file containing the commands you want to test.
+- [Valgrind] must be installed on your system.
+- Your `minishell` executable should be compiled and available in the same directory as this script (or update the `MINISHELL` path in the script).
+- A `commands.txt` file with shell commands you want to test.
+- (Optional) A `local.supp` file for Valgrind suppressions.
 
-Optionally, adjust or create a local.supp file for Valgrind suppressions if needed.
+## 📄 Usage
 
-Execution:
+1. **Make the script executable:**
 
-Make the script executable by running:
-chmod +x your_script_name.sh
+   ```bash
+   chmod +x leak_checker.sh
 
-Run the script from the terminal:
-./your_script_name.sh
-
-What It Does:
-
-The script reads each command from commands.txt and runs it through your Minishell using Valgrind.
-
-It checks for memory leaks and displays a summary for each command.
-
-At the end, it cleans up temporary files and reports that all tests are completed.
