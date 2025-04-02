@@ -21,3 +21,15 @@ This script is designed to automatically test your `minishell` executable for me
    ```bash
    ./leak_checker.sh
 
+=== Memory Leak Test Started ===
+
+[1] ==> Testing command: echo Hello
+✅ No leak.
+
+[2] ==> Testing command: cat < Makefile
+❌ Leak detected!
+==12345== LEAK SUMMARY:
+==12345==    definitely lost: 32 bytes in 1 blocks
+...
+
+=== All tests completed ===
