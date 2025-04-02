@@ -17,6 +17,7 @@ This script is designed to automatically test your `minishell` executable for me
    chmod +x leak_checker.sh
 
 2. **Run the script from the terminal:**
-   
- `./leak_checker.sh`
+
+   ```bash
+   ./leak_checker.sh
 
