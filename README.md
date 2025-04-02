@@ -18,5 +18,5 @@ This script is designed to automatically test your `minishell` executable for me
 
 2. **Run the script from the terminal:**
    
-  ``` ./your_script_name.sh
+  ```./leak_checker.sh
 
