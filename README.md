@@ -21,6 +21,8 @@ This script is designed to automatically test your `minishell` executable for me
    ```bash
    ./leak_checker.sh
 
+
+```bash
 === Memory Leak Test Started ===
 
 [1] ==> Testing command: echo Hello
